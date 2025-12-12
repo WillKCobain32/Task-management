@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Projeto.css">  
+     <title>ProjetoWeb</title>
+</head>
+<body>
+    <header>
+        <h1> Gerenciador de projetos </h1>
+        <div class="controles">
+            <button onclick="addQuadro()" class="btn-primary"> Adicionar Quadro </button>
+            <button onclick="exportarData()" class="btn-secondary"> exportar JSON </button>
+            <label for="importInput" class="btn-secondary uplode-label">Importar JSON</label>
+            <input type="file" id="importInput" accept=".json" onchange="importarData(this)">
+        </div>
+    </header>
+    <main id="BoardContainer" class="board_container">  </main>
+
+    <script src="Projeto.js"></script>
+
+</body>
+</html>
